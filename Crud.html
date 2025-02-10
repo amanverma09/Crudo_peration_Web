@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electronic Store</title>
+    <link rel="stylesheet" href="crud.css" />
+  </head>
+  <body>
+    <div class="parentcontainer">
+      <div class="container">
+        <h1>Electronic Store</h1>
+        <form id="product-form">
+          <div>
+            <input type="text" placeholder="Product Name" required />
+            <input type="text" placeholder="Image URL" required />
+            <input type="text" placeholder="Seller" required />
+            <input type="number" placeholder="Price" required />
+          </div>
+          <div class="btn-container">
+            <button type="submit" class="create-btn">Create</button>
+            <button type="button" class="read-btn">Read</button>
+            <button type="button" class="update-btn">Update</button>
+            <button type="button" class="delete-btn">Delete All</button>
+          </div>
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Product Name</th>
+              <th>images</th>
+              <th>Seller</th>
+              <th>Price</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Pixel 6A</td>
+              <td>
+                <img
+                  src="../Dom Main Concept/media/images/p-mobile.webp"
+                  width="100"
+                  alt="Product 1"
+                />
+              </td>
+              <td style="color: blue; font-weight: bolder">Aman Bhamuriya</td>
+              <td>$9999</td>
+              <td><button class="edit-btn">Edit</button></td>
+              <td><button class="delete-bt">Delete</button></td>
+            </tr>
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- this is without api -->
+    <!-- <script src="crud.js"></script> -->
+    <script src="crud2.js"></script>
+  </body>
+</html>
